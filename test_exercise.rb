@@ -27,14 +27,13 @@ class TestExercise < Test::Unit::TestCase
     assert_equal 91, Exercise.new.get(9)
   end
 
-    test 'ten' do
-      assert_equal 109, Exercise.new.get(10)
-    end
+  test 'ten' do
+    assert_equal 109, Exercise.new.get(10)
+  end
 
-
-    test 'eleven' do
-      assert_equal 118, Exercise.new.get(11)
-    end
+  test 'eleven' do
+    assert_equal 118, Exercise.new.get(11)
+  end
 
   test 'twenty' do
     assert_equal 208, Exercise.new.get(20)
@@ -51,7 +50,8 @@ class TestExercise < Test::Unit::TestCase
   test 'two thousand' do
     assert_equal 220033, Exercise.new.get(2000)
   end
-  # test 'ten thousand' do
-  #   assert_equal 0, Exercise.new.get(10000)
-  # end
+
+  test 'four thousand' do
+    assert_equal 1120024, Exercise.new.get(4000)
+  end
 end
